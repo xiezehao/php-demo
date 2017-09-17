@@ -1,0 +1,22 @@
+<?php
+header("content-type:text/html;chartset=utf-8");
+require("Goods.class.php");
+require("Car.class.php");
+require("Phone.class.php");
+$car=new Car("汽车");
+$phone=new Phone('手机');
+$car->setName("汽车");
+$car->setPrice("123");
+$phone->setName("手机");
+$phone->setPrice("456");
+$car->getName();
+echo "<br>";
+$car->getPrice();
+echo "<br>";
+$car->message();
+echo "<br>";
+$phone->getName();
+echo "<br>";
+$phone->getPrice();
+echo "<br>";
+$phone->message();
