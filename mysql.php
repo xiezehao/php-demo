@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: text/html;charset=utf-8"); 
-$link=new mysqli("localhost","root","","blog") or die("连接失败");
+$link=new mysqli("localhost","root","","blog") or die("连接失败".mysql_error());
 var_dump($link);
 // mysql_select_db("blog") or die("链接数据表错误");
 // $row=mysql_query($link,"select * from blog-content");

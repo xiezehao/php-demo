@@ -26,7 +26,11 @@ class db{
 
 class db2 extends db 
 {
-    
+    static $nub="123";
+    function show()
+    {
+        echo self::$nub;
+    }
 }
 
 
@@ -35,3 +39,4 @@ $result=$db->query("select * from `blog-content`");
 while ($row=$result->fetch_assoc()) {
     echo $row["id"],$row["title"],"<br>";
 }
+$db->show();
